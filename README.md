@@ -4,7 +4,23 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Current physical-device test build
+## Current Set Trip fixes — 8 October 2026
+
+- [Android debug APK](https://github.com/trtqt1203/wakestop-downloads/releases/download/set-trip-fixes-20261008-953e82b/WakeStop-debug.apk)
+- [iOS unsigned device IPA](https://github.com/trtqt1203/wakestop-downloads/releases/download/set-trip-fixes-20261008-953e82b/WakeStop-unsigned.ipa)
+- [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/set-trip-fixes-20261008-953e82b/PHYSICAL_TEST_CHECKLIST.md)
+- [Build/test report](https://github.com/trtqt1203/wakestop-downloads/releases/download/set-trip-fixes-20261008-953e82b/ALARM_LIST_REPORT.md)
+- [SHA-256 checksums and actual iOS screenshots](https://github.com/trtqt1203/wakestop-downloads/releases/tag/set-trip-fixes-20261008-953e82b)
+
+Done/outside-tap keyboard dismissal, Road pre-Start preview/ETA/red on-route
+points (no Road circles), and single-editor accordion. Android build/unit/lint
+passed; iOS device archive succeeded. The whole iOS simulator gate FAILED during
+two post-test finalizations despite 21 unit + 11 UI tests reporting passed
+assertions. Both build downloads and attached documents/images were downloaded
+anonymously and compared byte-for-byte with their originals. Real-phone acceptance
+is pending; source is private and no raw diagnostic logs are published.
+
+## Previous physical-device test build (before these fixes)
 
 - [Android debug APK](https://github.com/trtqt1203/wakestop-downloads/releases/download/physical-check-20261008-09a0ff6/WakeStop-debug.apk)
 - [iOS unsigned device IPA](https://github.com/trtqt1203/wakestop-downloads/releases/download/physical-check-20261008-09a0ff6/WakeStop-unsigned.ipa)
