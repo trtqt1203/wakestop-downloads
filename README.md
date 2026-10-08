@@ -8,12 +8,17 @@ signing keys, credentials or users' trip data.
 
 - [Android debug APK](https://github.com/trtqt1203/wakestop-downloads/releases/download/alarm-reliability-20261008-44056f9/WakeStop-debug.apk)
 - [iOS unsigned device IPA](https://github.com/trtqt1203/wakestop-downloads/releases/download/alarm-reliability-20261008-44056f9/WakeStop-unsigned.ipa)
+- [Build/test report](https://github.com/trtqt1203/wakestop-downloads/releases/download/alarm-reliability-20261008-44056f9/ALARM_LIST_REPORT.md)
+- [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/alarm-reliability-20261008-44056f9/PHYSICAL_TEST_CHECKLIST.md)
 - [Checksums and handoff documents](https://github.com/trtqt1203/wakestop-downloads/releases/tag/alarm-reliability-20261008-44056f9)
 
 Swipe-to-dismiss on both platforms; fixed top-right **?** tutorial access;
 iOS alarm-session admission no longer cancels an undismissed threshold;
 Android playback is retained across same-trip intents/configuration recreation.
-Android's 24 unit tests/build/lint and iOS device archive passed. Physical-phone
+Android's 24 unit tests/build/lint and iOS device archive passed. iOS's 24 unit
+and 11 UI tests reported passing assertions (including swipe and help), but the
+whole simulator gate **FAILED** due to two existing post-test finalization hangs.
+Physical-phone
 acceptance is pending: the reported solitary iPhone 1–2-second silence is **not
 confirmed fixed**. Both actual build downloads returned anonymous HTTP 200
 and matched their original SHA-256 checksums and bytes.
@@ -51,4 +56,3 @@ These are test builds, not a claim of verified real GPS, background audio or
 journey reliability. Physical-device verification remains pending the owner's
 iPhone and Android results. See each release's report for actual build/test
 results; simulator assertion passes are not physical visual confirmation.
-
