@@ -4,7 +4,21 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Current Set Trip fixes — 8 October 2026
+## Latest alarm-session fixes — 8 October 2026
+
+- [Android debug APK](https://github.com/trtqt1203/wakestop-downloads/releases/download/alarm-reliability-20261008-44056f9/WakeStop-debug.apk)
+- [iOS unsigned device IPA](https://github.com/trtqt1203/wakestop-downloads/releases/download/alarm-reliability-20261008-44056f9/WakeStop-unsigned.ipa)
+- [Checksums and handoff documents](https://github.com/trtqt1203/wakestop-downloads/releases/tag/alarm-reliability-20261008-44056f9)
+
+Swipe-to-dismiss on both platforms; fixed top-right **?** tutorial access;
+iOS alarm-session admission no longer cancels an undismissed threshold;
+Android playback is retained across same-trip intents/configuration recreation.
+Android's 24 unit tests/build/lint and iOS device archive passed. Physical-phone
+acceptance is pending: the reported solitary iPhone 1–2-second silence is **not
+confirmed fixed**. Both actual build downloads returned anonymous HTTP 200
+and matched their original SHA-256 checksums and bytes.
+
+## Previous Set Trip fixes — 8 October 2026
 
 - [Android debug APK](https://github.com/trtqt1203/wakestop-downloads/releases/download/set-trip-fixes-20261008-953e82b/WakeStop-debug.apk)
 - [iOS unsigned device IPA](https://github.com/trtqt1203/wakestop-downloads/releases/download/set-trip-fixes-20261008-953e82b/WakeStop-unsigned.ipa)
@@ -37,3 +51,4 @@ These are test builds, not a claim of verified real GPS, background audio or
 journey reliability. Physical-device verification remains pending the owner's
 iPhone and Android results. See each release's report for actual build/test
 results; simulator assertion passes are not physical visual confirmation.
+
