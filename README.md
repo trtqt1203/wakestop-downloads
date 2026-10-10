@@ -7,6 +7,7 @@ signing keys, credentials or users' trip data.
 ## Latest Home/map verification — 1.1.0 (3), 10 October 2026
 
 - [Android debug APK (3)](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/WakeStop-debug.apk)
+- [iOS unsigned device IPA (3)](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/WakeStop-unsigned.ipa)
 - [Build/test report](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/ALARM_LIST_REPORT.md)
 - [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/PHYSICAL_TEST_CHECKLIST.md)
 - [SHA-256 checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/SHA256SUMS)
@@ -16,11 +17,13 @@ follow camera and main maps with persistent settings/details sheets. Android
 unit/build/lint passed: **40 unit tests**, native UI tests **compiled only**.
 APK downloaded anonymously: HTTP 200, 20,519,190 bytes, checksum/bytes match.
 
-**No fresh iOS IPA is available for this update yet.** Equivalent iOS source
-and version (3) are committed, but macOS verification/export is blocked by
-the disconnected Codemagic browser/unavailable API token and GitHub billing
-rejection. The previous IPA (2) below does not contain these changes. No new
-visual screenshot or physical-device acceptance is claimed; see the checklist.
+**Fresh iOS IPA (3) exported on 11 October 2026.** The Codemagic device archive
+passed after a Swift compiler-only camera-signature fix (source `05e1d2c`).
+IPA ZIP CRC, Payload/WakeStop.app, arm64/iPhoneOS, version 1.1.0 (3) and unsigned
+state verified. Anonymous download: HTTP 200, 389,638 bytes, checksum/bytes match.
+The owner must sign the IPA before installing. Final-source iOS unit/UI gates
+and physical-device acceptance remain unverified; no new app screenshot is
+claimed. GitHub's account-level CI job-start blocker remains. See the checklist.
 Application source repository stays private; no secrets/raw logs are uploaded.
 
 ## Previous sequential stop alarms — 10 October 2026
