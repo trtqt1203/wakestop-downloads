@@ -4,7 +4,26 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest sequential stop alarms — 10 October 2026
+## Latest Home/map verification — 1.1.0 (3), 10 October 2026
+
+- [Android debug APK (3)](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/WakeStop-debug.apk)
+- [Build/test report](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/ALARM_LIST_REPORT.md)
+- [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/PHYSICAL_TEST_CHECKLIST.md)
+- [SHA-256 checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/SHA256SUMS)
+
+Corner-only help, one new-trip alarm (explicit Add up to ten), user-centered
+follow camera and main maps with persistent settings/details sheets. Android
+unit/build/lint passed: **40 unit tests**, native UI tests **compiled only**.
+APK downloaded anonymously: HTTP 200, 20,519,190 bytes, checksum/bytes match.
+
+**No fresh iOS IPA is available for this update yet.** Equivalent iOS source
+and version (3) are committed, but macOS verification/export is blocked by
+the disconnected Codemagic browser/unavailable API token and GitHub billing
+rejection. The previous IPA (2) below does not contain these changes. No new
+visual screenshot or physical-device acceptance is claimed; see the checklist.
+Application source repository stays private; no secrets/raw logs are uploaded.
+
+## Previous sequential stop alarms — 10 October 2026
 
 Version **1.1.0 (2)** on both platforms: up to five ordered stops plus the
 destination, 1–10 named thresholds for the current target, persisted progress
@@ -82,4 +101,3 @@ These are test builds, not a claim of verified real GPS, background audio or
 journey reliability. Physical-device verification remains pending the owner's
 iPhone and Android results. See each release's report for actual build/test
 results; simulator assertion passes are not physical visual confirmation.
-
