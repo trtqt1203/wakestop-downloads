@@ -4,7 +4,26 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest bus/map recovery build — 1.1.0 (6), 12 October 2026
+## Latest Android map follow-up — Android 1.1.0 (7), 12 October 2026
+
+- [Android debug APK (7)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/WakeStop-debug.apk)
+- [Current report (REPORT.md)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/REPORT.md)
+- [Physical checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/PHYSICAL_TEST_CHECKLIST.md)
+- [Actual Set Trip screenshot](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/set-trip-real-map.png)
+- [Checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/SHA256SUMS)
+
+Retry resets failed-URL backoff while preserving cache/camera/overlays; DNS and
+HTTPS failures have distinct reasons. Android unit/build/lint passed (60 unit
+tests), 6 actual native checks passed on API34. Real street raster is visible
+with working emulator DNS; not a mock or owner-phone acceptance. APK 20,602,386
+bytes, same debug signer as APK6, anonymous HTTP200/bytes/checksum verified.
+The APK does not silently override the phone's DNS or map provider.
+
+iOS remains (6), unchanged: MapKit has no osmdroid state to reset, so no new
+IPA/macOS pass is claimed. Its existing download and known UI limitations are
+in the prior dual-platform release below. App source remains private.
+
+## Previous dual-platform bus/map build — 1.1.0 (6), 12 October 2026
 
 - [Android debug APK (6)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/WakeStop-debug.apk)
 - [iOS unsigned device IPA (6)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/WakeStop-unsigned.ipa)
