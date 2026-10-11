@@ -4,7 +4,36 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest Home/map verification — 1.1.0 (3), 10 October 2026
+## Latest bus places prototype — 1.1.0 (4), 11 October 2026
+
+- [Android debug APK (4)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/WakeStop-debug.apk)
+- [iOS unsigned device IPA (4)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/WakeStop-unsigned.ipa)
+- [Build/test report](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/ALARM_LIST_REPORT.md)
+- [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/PHYSICAL_TEST_CHECKLIST.md)
+- [Bus places/policy](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/BUS_STOPS.md)
+- [Bus-line investigation (no routing implementation)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/BUS_LINES_INVESTIGATION.md)
+- [SHA-256 checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/SHA256SUMS)
+
+Android unit/build/lint passed (47 unit results; native UI tests compiled only).
+iOS device archive passed; actual IPA metadata 1.1.0 (4), iPhoneOS arm64,
+Payload/WakeStop.app, ZIP CRC and unsigned status verified. Anonymous download:
+HTTP 200, 445,243 bytes, checksum/bytes match. **The owner must sign before install.**
+
+The separate iOS simulator gate **FAILED**: 44 unit cases (42 pass / 2 stale
+fixture failures; all six bus tests passed), 17 UI cases (15 assertion passes /
+2 failing cases), only 14 UI bundles fully finalized. Bus-layer activation,
+marker selection and keyboard checks remain unresolved; archive availability
+is not app acceptance. No blind timeout increase or simulator retry.
+
+Owner-only two-device prototype: public Overpass is not production infrastructure;
+four uncached requests/installation/day and 24-hour cache. Wider distribution
+requires owned Overpass or bundled data. Xe buýt enables the places layer only;
+Road mode is still an estimated car route, not an actual bus line. Real-device
+journeys/audio remain unverified, including the reported 1–2-second silence.
+Application source stays private; no credentials/raw confidential logs are published.
+
+
+## Previous Home/map verification — 1.1.0 (3), 10 October 2026
 
 - [Android debug APK (3)](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/WakeStop-debug.apk)
 - [iOS unsigned device IPA (3)](https://github.com/trtqt1203/wakestop-downloads/releases/download/home-maps-20261010-build3/WakeStop-unsigned.ipa)
