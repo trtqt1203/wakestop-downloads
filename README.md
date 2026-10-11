@@ -4,7 +4,34 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest map/route test build — 1.1.0 (5), 11 October 2026
+## Latest bus/map recovery build — 1.1.0 (6), 12 October 2026
+
+- [Android debug APK (6)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/WakeStop-debug.apk)
+- [iOS unsigned device IPA (6)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/WakeStop-unsigned.ipa)
+- [Current-task report](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/ALARM_LIST_REPORT.md)
+- [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/PHYSICAL_TEST_CHECKLIST.md)
+- [Bus places/policy](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/BUS_STOPS.md)
+- [SHA-256 checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-map-20261012-build6/SHA256SUMS)
+
+Both platforms: bus error reasons, Retry/backoff/Retry-After and retained expired
+cache. Android: missing-tile diagnostics/recovery; the owner's phone-specific
+cause is still unconfirmed. Separately reproduced iOS small-map camera insets
+corrected. Consumption copy removed, background-reliability/OEM guidance kept.
+
+Android unit/build/lint passed (57 unit results). iOS final-source archive and
+unit/UI compilation passed; corrected and final-source simulator unit runs
+passed all 54 tests. **UI gate did not pass:** three cases failed (keyboard/layout,
+camera-test signal, toggle/marker); batch stopped after repeated post-test
+finalization hangs, sixteen UI cases unrun. No timeout padding/retries and no
+new physical-device or screenshot pass. Details/remaining work are in the report.
+
+Both binaries downloaded anonymously (HTTP 200), checksums and bytes matched.
+APK 20,601,070 bytes; IPA 485,657 bytes, Payload/WakeStop.app, iPhoneOS arm64,
+version 1.1.0 (6), **unsigned; owner signing required before installation**.
+App source remains private; no credentials/private raw logs are published.
+Use the checklist on both devices. Do not use a test build as the sole alarm.
+
+## Previous map/route test build — 1.1.0 (5), 11 October 2026
 
 - [Android debug APK (5)](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/WakeStop-debug.apk)
 - [iOS unsigned device IPA (5)](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/WakeStop-unsigned.ipa)
