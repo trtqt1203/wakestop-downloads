@@ -4,7 +4,36 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest bus places prototype — 1.1.0 (4), 11 October 2026
+## Latest map/route test build — 1.1.0 (5), 11 October 2026
+
+- [Android debug APK (5)](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/WakeStop-debug.apk)
+- [iOS unsigned device IPA (5)](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/WakeStop-unsigned.ipa)
+- [Build/test report](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/ALARM_LIST_REPORT.md)
+- [Physical-device checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/PHYSICAL_TEST_CHECKLIST.md)
+- [Bus places/policy](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/BUS_STOPS.md)
+- [SHA-256 checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/map-route-20261011-build5-c4a6448/SHA256SUMS)
+
+Tiered/forced Road+Bus places, picker gesture/camera ownership and center pin,
+retained road previews with explicit errors/Retry, and keyboard/sheet layout.
+Android gates passed (51 unit results; native UI tests compiled only). iOS
+device archive and native unit/UI bundle compilation passed on Xcode 26.
+**No current-source iOS test execution pass**: the full gate remained queued
+without a machine and was cancelled. No new app screenshots are claimed.
+
+Both packages were downloaded anonymously (HTTP 200), bytes/checksums compared.
+The final IPA is 474,417 bytes, Payload/WakeStop.app, iPhoneOS arm64, 1.1.0 (5),
+**unsigned; owner signing required**. The source-suffixed release above includes
+the final iOS same-target retry cleanup correction; the early unsuffixed
+build-5 release is superseded, retained for recoverability.
+
+Physical map/keyboard/bus/route behavior and Android's reported blank map still
+need owner verification. Tracking's active target remains read-only pending a
+separate live-target-editing decision. Road+Bus is an estimated car route, not
+a real bus line; shared Overpass is not production infrastructure. The earlier
+solitary iPhone alarm-silence report is not confirmed fixed by this update.
+App source remains private; no secrets or raw private logs are published here.
+
+## Previous bus places prototype — 1.1.0 (4), 11 October 2026
 
 - [Android debug APK (4)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/WakeStop-debug.apk)
 - [iOS unsigned device IPA (4)](https://github.com/trtqt1203/wakestop-downloads/releases/download/bus-places-20261011-build4/WakeStop-unsigned.ipa)
