@@ -4,7 +4,30 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest Android map follow-up — Android 1.1.0 (7), 12 October 2026
+## Latest Android DNS follow-up — Android 1.1.0 (8), 12 October 2026
+
+- [Android debug APK (8)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/WakeStop-debug.apk)
+- [Current report (REPORT.md)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/REPORT.md)
+- [Physical checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/PHYSICAL_TEST_CHECKLIST.md)
+- [Actual Set Trip screenshot](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/set-trip-real-map.png)
+- [Map connection disclosure](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/map-connection-disclosure.png)
+- [Checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/SHA256SUMS)
+
+System DNS first, automatic Google DNS-over-HTTPS fallback for OSM raster only.
+No phone DNS change, VPN, paid map service or API key. Google sees hostname and
+connection IP, not trip coordinates in the DNS query. Search/bus/routing keep
+their existing resolvers; still requires internet. APK **21,656,412 bytes**,
+SHA-256 `4a5430d76f93a872ba49f99cc924737b97de5f127069847234cf5fb36c2c4a56`,
+same APK7 signer; anonymous HTTP200/bytes/checksums verified.
+
+Local Android gates passed (70 unit tests, build/lint); actual API34 native/live
+checks OK (8 tests). Default emulator DNS failed yet production client fetched
+valid PNG200. Actual street raster/disclosure screenshots, not owner-phone
+acceptance. GitHub CI could not allocate runners (zero executed steps), not a
+CI pass. iOS remains (6), unchanged: MapKit owns its base-map transport, no new
+IPA/macOS check claimed; existing UI failures remain open. Source stays private.
+
+## Previous Android map follow-up — Android 1.1.0 (7), 12 October 2026
 
 - [Android debug APK (7)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/WakeStop-debug.apk)
 - [Current report (REPORT.md)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-retry-20261012-build7/REPORT.md)
