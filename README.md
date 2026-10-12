@@ -4,7 +4,31 @@ This repository holds public APK/unsigned IPA release assets and non-confidentia
 device-testing checklists/reports. It does not contain the app's source history,
 signing keys, credentials or users' trip data.
 
-## Latest Android DNS follow-up — Android 1.1.0 (8), 12 October 2026
+## Latest Android native-map fix — 1.1.0 (9), 12 October 2026
+
+- [Android debug APK (9)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/WakeStop-debug.apk)
+- [Current report (REPORT.md)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/REPORT.md)
+- [Physical checklist](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/PHYSICAL_TEST_CHECKLIST.md)
+- [Actual Set Trip street raster](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/set-trip-real-map.png)
+- [Home showing build9](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/home-build9.png)
+- [Checksums](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/SHA256SUMS)
+
+APK8's DoH diagnostic passed, but the real osmdroid loader called a 5-argument
+overload while our adapter overrode only 3 arguments. APK9 fixes the actual
+dispatch and puts Retry above overlapping controls. RED native regression
+failed with transport calls0; GREEN selected native suite10 passed. Local
+unit70/build/lint pass; real street raster visible after a cache-empty start,
+not a mock or owner-phone acceptance. APK **21,324,848 bytes**,
+SHA-256 `45a5dff4388fa2108b3a8d89931135af5b31890c70b1301ffc9d8a7b9e184613`,
+same APK8 signer; anonymous HTTP200/bytes/checksums verified. Install as update.
+
+Still OSM/system-first Google HTTPS DNS, no new provider/global DNS change,
+disabled TLS or fixed OSM CDN IP. iOS remains6: MapKit has no such overload and
+its error/Retry already overlays controls, no new IPA/macOS gate claimed.
+GitHub CI could not allocate runners (both jobs0 steps), not an app-gate pass.
+Source private, this delivery repo public. Original phone test remains pending.
+
+## Previous Android DNS diagnostic — 1.1.0 (8), native integration superseded
 
 - [Android debug APK (8)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/WakeStop-debug.apk)
 - [Current report (REPORT.md)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-map-dns-20261012-build8/REPORT.md)
