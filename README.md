@@ -1,10 +1,46 @@
-# WakeStop — public downloads
+# WakeStop — Tải ứng dụng
 
-This repository holds public APK/unsigned IPA release assets and non-confidential
-device-testing checklists/reports. It does not contain the app's source history,
-signing keys, credentials or users' trip data.
+**Lên xe chợp mắt – Khỏe khoắn cả ngày**
 
-## Latest Android native-map fix — 1.1.0 (9), 12 October 2026
+*Nap on the way – Fresh all day*
+
+Repo này cung cấp APK, IPA và các báo cáo/checklist không mật, tải được không cần
+đăng nhập. Mã nguồn ứng dụng được giữ riêng tư; không công bố khóa ký, thông tin
+đăng nhập hoặc dữ liệu chuyến đi của người dùng.
+
+## Bản mới nhất — 1.1.0 (39), ngày 24/10/2026
+
+Chuẩn bị cho đợt phát hành ngày **25/10/2026**. Đây vẫn là **Release thử nghiệm**,
+chưa phải phê duyệt phát hành production. Việc chuẩn hóa tên file không thay đổi
+nội dung, chữ ký hoặc trạng thái kiểm chứng của build 39.
+
+| Nền tảng | Tải trực tiếp | Dung lượng | Lưu ý |
+|---|---|---|---|
+| Android | [WakeStop-1.1.0-build39-Android.apk](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-Android.apk) | 52.285.971 bytes (~52,3 MB) | Android 8 trở lên; Release tối ưu R8, tắt debug; giữ chữ ký thử nghiệm cũ |
+| iOS | [WakeStop-1.1.0-build39-iOS-unprovisioned.ipa](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-iOS-unprovisioned.ipa) | 9.829.198 bytes (~9,8 MB) | iOS 26 trở lên; **cần ký lại app và phần mở rộng trước khi cài** |
+
+IPA được build bằng xtool ở cấu hình Release, có chữ ký ad-hoc cục bộ nhưng chưa
+có provisioning profile/chữ ký phân phối Apple. Link công khai không làm IPA tự
+cài được. Không yêu cầu gỡ app/xóa dữ liệu để né lỗi chữ ký khi cập nhật.
+
+- [Trang tải đầy đủ build 39](https://github.com/trtqt1203/wakestop-downloads/releases/tag/ui-fixes-20261024-build39)
+- [Báo cáo thay đổi và kết quả kiểm tra build 39](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/UI_LAYOUT_BUILD39.md)
+- [Checklist kiểm tra trên điện thoại](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/PHYSICAL_TEST_CHECKLIST.md)
+- [SHA-256 của hai file mang tên mới](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-SHA256SUMS.txt)
+
+Đã tải toàn bộ hai file từ link công khai không đăng nhập và đối chiếu đúng bytes,
+SHA-256. Android: **227/227 unit test**, Debug/Release build và lint đạt. iOS:
+**19/19 test portable trên Linux** và xtool Release build đạt; **không phải native
+XCTest/UI trên iPhone**. Lượt macOS CI trước bị Actions budget chặn trước runner.
+Các kết quả này không thay thế kiểm tra đầy đủ trên máy thật hoặc chứng nhận bảo mật.
+
+Build 39 sửa thẻ chuyến yêu thích bị cắt, bố cục nút tính giờ lên đường, gộp
+cài đặt vào **Tùy chỉnh**, và mặc định Tiếng Việt khi cài mới trên cả hai nền tảng.
+Các link tên cũ của build 39 vẫn được giữ để không làm hỏng lượt tải trước.
+
+## Lịch sử — Android 1.1.0 (9), ngày 12/10/2026 — không phải bản mới nhất
+
+Các mục dưới đây là hồ sơ cũ; hãy dùng link **build 39 ở trên** để tải bản mới.
 
 - [Android debug APK (9)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/WakeStop-debug.apk)
 - [Current report (REPORT.md)](https://github.com/trtqt1203/wakestop-downloads/releases/download/android-native-map-20261012-build9/REPORT.md)
