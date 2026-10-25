@@ -8,11 +8,37 @@ Repo này cung cấp APK, IPA và các báo cáo/checklist không mật, tải �
 đăng nhập. Mã nguồn ứng dụng được giữ riêng tư; không công bố khóa ký, thông tin
 đăng nhập hoặc dữ liệu chuyến đi của người dùng.
 
-## Bản mới nhất — 1.1.0 (39), ngày 24/10/2026
+## Bản mới nhất — iOS 1.1.0 (40) / Android 1.1.0 (39), ngày 25/10/2026
 
-Chuẩn bị cho đợt phát hành ngày **25/10/2026**. Đây vẫn là **Release thử nghiệm**,
-chưa phải phê duyệt phát hành production. Việc chuẩn hóa tên file không thay đổi
-nội dung, chữ ký hoặc trạng thái kiểm chứng của build 39.
+| Nền tảng | Tải trực tiếp | Hỗ trợ và trạng thái |
+|---|---|---|
+| Android | [WakeStop-1.1.0-build39-Android.apk](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-Android.apk) | Android8+; giữ APK39, không đổi hành vi hoặc chữ ký |
+| iOS | [WakeStop-1.1.0-build40-iOS17-unprovisioned.ipa](https://github.com/trtqt1203/wakestop-downloads/releases/download/ios17-20261025-build40/WakeStop-1.1.0-build40-iOS17-unprovisioned.ipa) | **iOS17+**,10.045.502bytes (~10MB); **cần ký lại cả app và extension** |
+
+**Lưu ý quan trọng:** iOS26+ giữ AlarmKit. Trên iOS17/18, khi app ở nền/khóa máy
+chỉ có thông báo âm thanh ngắn, có thể bị Silent/Focus hoặc cài đặt thông báo chặn.
+Âm thanh lặp chỉ khi app đang mở. Không hứa báo thức hệ thống liên tục trên máy
+cũ; hãy thử trên điện thoại trước khi dùng trong chuyến đi. iOS16 chưa hỗ trợ.
+
+Đây là **prerelease thử nghiệm**, chưa phải phê duyệt production. Mức tối thiểu17.0
+được build thật vào app/widget, không phải sửa thông số IPA cũ. Giữ nguyên dữ liệu
+chuyến, Apple Maps và backend AlarmKit trên26+. Không bật chức năng sửa
+MinimumOSVersion hoặc xóa plug-in trong ESign để giả tương thích.
+
+- [Trang bản iOS40](https://github.com/trtqt1203/wakestop-downloads/releases/tag/ios17-20261025-build40)
+- [Báo cáo tương thích và giới hạn kiểm chứng](https://github.com/trtqt1203/wakestop-downloads/releases/download/ios17-20261025-build40/IOS17_COMPATIBILITY.md)
+- [Checklist kiểm tra máy thật iOS17/18/26](https://github.com/trtqt1203/wakestop-downloads/releases/download/ios17-20261025-build40/PHYSICAL_TEST_CHECKLIST.md)
+- [Checksum IPA40 và tài liệu](https://github.com/trtqt1203/wakestop-downloads/releases/download/ios17-20261025-build40/SHA256SUMS.txt)
+
+Kiểm tra mới:26/26 portable XCTest,10/10 clock-coordinator tests và26/26 host/package
+tests đạt; xtool Release và toàn bộ unit-test target cross-compile đạt. Native
+macOS CI bị ngân sách Actions chặn trước runner (0 bước/test/artifact); chưa xác
+nhận âm thanh/khóa màn hình/cài đặt trên iPhone17/18/26. Android không rebuild:
+kết quả build39 bên dưới là kết quả lần trước, không phải full gates mới.
+
+## Bản iOS trước — 1.1.0 (39), ngày 24/10/2026; Android39 vẫn hiện hành
+
+Các link dưới đây giữ lại để đối chiếu build39. Với iOS17/18, hãy dùng **IPA40 ở trên**.
 
 | Nền tảng | Tải trực tiếp | Dung lượng | Lưu ý |
 |---|---|---|---|
