@@ -9,6 +9,8 @@
 
 Website có tiếng Việt/English, hướng dẫn chọn bản, lưu ý cài đặt và checksum SHA-256.
 
+Không cần đăng nhập để tải file. Chọn bản phù hợp với phiên bản hệ điều hành trên điện thoại của bạn.
+
 | Điện thoại | Bản được giới thiệu | Tải trực tiếp |
 | --- | --- | --- |
 | iPhone · iOS 26 trở lên | 1.1.0 (39), báo thức hệ thống AlarmKit | [IPA chưa provision · 9,8 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-iOS-unprovisioned.ipa) |
