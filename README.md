@@ -33,8 +33,12 @@ MinimumOSVersion hoặc xóa plug-in trong ESign để giả tương thích.
 Kiểm tra mới:26/26 portable XCTest,10/10 clock-coordinator tests và26/26 host/package
 tests đạt; xtool Release và toàn bộ unit-test target cross-compile đạt. Native
 macOS CI bị ngân sách Actions chặn trước runner (0 bước/test/artifact); chưa xác
-nhận âm thanh/khóa màn hình/cài đặt trên iPhone17/18/26. Android không rebuild:
+nhận âm thanh/khóa màn hình/cài đặt trên iPhone chạy iOS17/18/26. Android không rebuild:
 kết quả build39 bên dưới là kết quả lần trước, không phải full gates mới.
+
+Đã tải ẩn danh toàn bộ IPA40, báo cáo, checklist và file checksum từ link public:
+cả4 file khớp bytes/SHA-256. Việc tải thành công không chứng minh cài đặt hoặc âm
+báo trên thiết bị thật đã đạt.
 
 ## Bản iOS trước — 1.1.0 (39), ngày 24/10/2026; Android39 vẫn hiện hành
 
