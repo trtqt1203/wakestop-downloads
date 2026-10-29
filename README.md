@@ -5,17 +5,21 @@
 
 ## Tải ứng dụng / Downloads
 
-### [Mở website WakeStop →](https://wakestop-download.brainy-seal-3094.chatgpt.site)
+### [Mở website WakeStop →](https://wakestop.pages.dev/#download)
 
 Website có tiếng Việt/English, hướng dẫn chọn bản, lưu ý cài đặt và checksum SHA-256.
+
+Bản mới nhất: **1.1.0 (41)** — cập nhật GPS, hiển thị phần đường còn lại và tùy chỉnh màu lộ trình.
 
 Không cần đăng nhập để tải file. Chọn bản phù hợp với phiên bản hệ điều hành trên điện thoại của bạn.
 
 | Điện thoại | Bản được giới thiệu | Tải trực tiếp |
 | --- | --- | --- |
-| iPhone · iOS 26 trở lên | 1.1.0 (39), báo thức hệ thống AlarmKit | [IPA chưa provision · 9,8 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-iOS-unprovisioned.ipa) |
-| iPhone · iOS 17–18 | 1.1.0 (40), chế độ thông báo tương thích | [IPA chưa provision · 10,0 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/ios17-20261025-build40/WakeStop-1.1.0-build40-iOS17-unprovisioned.ipa) |
-| Android 8 trở lên | 1.1.0 (39), Release thử nghiệm | [APK · 52,3 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/ui-fixes-20261024-build39/WakeStop-1.1.0-build39-Android.apk) |
+| iPhone · iOS 26 trở lên | 1.1.0 (41), báo thức hệ thống AlarmKit | [IPA chưa provision · 10,0 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/WakeStop-1.1.0-build41-iOS26-unprovisioned.ipa) |
+| iPhone · iOS 17–18 | 1.1.0 (41), chế độ thông báo tương thích | [IPA chưa provision · 10,1 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/WakeStop-1.1.0-build41-iOS17-unprovisioned.ipa) |
+| Android 8 trở lên | 1.1.0 (41), Release thử nghiệm | [APK · 52,3 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/WakeStop-1.1.0-build41-Android-release-test.apk) |
+
+[Mã kiểm tra SHA-256](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/SHA256SUMS.txt) · [Thông tin bản thử nghiệm](https://github.com/trtqt1203/wakestop-downloads/releases/tag/gps-route-20261028-build41)
 
 **iPhone:** cả hai IPA cần ký phù hợp cho app và phần mở rộng trước khi cài. Không sửa MinimumOSVersion hay xóa plug-in để né lỗi. Chưa hỗ trợ iOS 16. Bản iOS 17–18 không bị chặn cài trên iOS mới; đây là nhóm máy khuyên dùng.
 
@@ -25,7 +29,7 @@ Không cần đăng nhập để tải file. Chọn bản phù hợp với phiê
 
 Đây là các bản kiểm thử. Hãy cấp quyền, thử chuông khi mở app và khi khóa máy trên điện thoại của bạn trước khi dùng. Không dùng WakeStop làm lời nhắc duy nhất. Tải/build thành công không xác nhận hoạt động trên mọi thiết bị.
 
-**English:** These are test builds. Both iOS packages are unprovisioned and require suitable signing for the app and its extension. iOS 17/18 has limited notification sound in the background; it is not equivalent to an iOS 26 system alarm. iOS 16 is unsupported. Test on your phone before relying on alerts. Do not uninstall Android to bypass a signature mismatch.
+**English:** Build 41 updates GPS handling, remaining-route display and custom route colors. These are test builds. Both iOS packages are unprovisioned and require suitable signing for the app and its extension. iOS 17/18 has limited notification sound in the background; it is not equivalent to an iOS 26 system alarm. iOS 16 is unsupported. Test on your phone before relying on alerts. Do not uninstall Android to bypass a signature mismatch.
 
 Kho này chỉ cung cấp file tải công khai. Mã nguồn ứng dụng không được công khai ở đây.
 
