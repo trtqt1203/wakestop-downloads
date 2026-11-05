@@ -31,6 +31,8 @@ Xóa bản sao cloud và đăng xuất chưa phải xóa tài khoản Firebase. 
 
 Đây là các bản kiểm thử. Hãy cấp quyền, thử chuông khi mở app và khi khóa máy trên điện thoại của bạn trước khi dùng. Không dùng WakeStop làm lời nhắc duy nhất. Tải/build thành công không xác nhận hoạt động trên mọi thiết bị.
 
+**Trạng thái iOS native (05/11/2026):** archive Xcode chưa đạt do lỗi trích xuất metadata App Intents; XCTest/UI tests chưa chạy. IPA tải ở đây được cross-build bằng xtool và chưa vượt qua gate native. Không coi đây là bản đã được xác nhận sẵn sàng phát hành.
+
 **English:** Build 42 synchronizes the Vietnamese/English privacy policy across Android, iOS and web. The native policy is readable offline. These are test builds. Both iOS packages are unprovisioned and require suitable app/extension signing. iOS 17/18 has limited background notification sound; iOS 16 is unsupported. Backup deletion and sign-out do not delete the Firebase account; full self-service deletion and store declarations remain unfinished. Test on your phone before relying on alerts. Do not uninstall Android to bypass a signature mismatch.
 
 Kho này chỉ cung cấp file tải công khai. Mã nguồn ứng dụng không được công khai ở đây.
