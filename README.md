@@ -7,19 +7,19 @@
 
 ### [Mở website WakeStop →](https://wakestop.pages.dev/#download)
 
-Website có tiếng Việt/English, hướng dẫn chọn bản, lưu ý cài đặt và checksum SHA-256.
+Bản mới nhất: **1.1.0 (42)** — chính sách quyền riêng tư Việt/Anh đồng bộ trong app và trên web, đọc được ngoại tuyến trong app.
 
-Bản mới nhất: **1.1.0 (41)** — cập nhật GPS, hiển thị phần đường còn lại và tùy chỉnh màu lộ trình.
+[Chính sách quyền riêng tư](https://wakestop.pages.dev/privacy/) · [Privacy policy](https://wakestop.pages.dev/privacy/en/)
 
-Không cần đăng nhập để tải file. Chọn bản phù hợp với phiên bản hệ điều hành trên điện thoại của bạn.
+Không cần đăng nhập để tải file. Chọn bản phù hợp với điện thoại của bạn.
 
 | Điện thoại | Bản được giới thiệu | Tải trực tiếp |
 | --- | --- | --- |
-| iPhone · iOS 26 trở lên | 1.1.0 (41), báo thức hệ thống AlarmKit | [IPA chưa provision · 10,0 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/WakeStop-1.1.0-build41-iOS26-unprovisioned.ipa) |
-| iPhone · iOS 17–18 | 1.1.0 (41), chế độ thông báo tương thích | [IPA chưa provision · 10,1 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/WakeStop-1.1.0-build41-iOS17-unprovisioned.ipa) |
-| Android 8 trở lên | 1.1.0 (41), Release thử nghiệm | [APK · 52,3 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/WakeStop-1.1.0-build41-Android-release-test.apk) |
+| iPhone · iOS 26 trở lên | 1.1.0 (42), báo thức hệ thống AlarmKit | [IPA chưa provision · 10,1 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/privacy-20261104-build42/WakeStop-1.1.0-build42-iOS26-unprovisioned.ipa) |
+| iPhone · iOS 17–18 | 1.1.0 (42), chế độ thông báo tương thích | [IPA chưa provision · 10,2 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/privacy-20261104-build42/WakeStop-1.1.0-build42-iOS17-unprovisioned.ipa) |
+| Android 8 trở lên | 1.1.0 (42), Release thử nghiệm | [APK · 52,3 MB](https://github.com/trtqt1203/wakestop-downloads/releases/download/privacy-20261104-build42/WakeStop-1.1.0-build42-release-test.apk) |
 
-[Mã kiểm tra SHA-256](https://github.com/trtqt1203/wakestop-downloads/releases/download/gps-route-20261028-build41/SHA256SUMS.txt) · [Thông tin bản thử nghiệm](https://github.com/trtqt1203/wakestop-downloads/releases/tag/gps-route-20261028-build41)
+[Mã kiểm tra SHA-256](https://github.com/trtqt1203/wakestop-downloads/releases/download/privacy-20261104-build42/SHA256SUMS.txt) · [Thông tin bản thử nghiệm](https://github.com/trtqt1203/wakestop-downloads/releases/tag/privacy-20261104-build42)
 
 **iPhone:** cả hai IPA cần ký phù hợp cho app và phần mở rộng trước khi cài. Không sửa MinimumOSVersion hay xóa plug-in để né lỗi. Chưa hỗ trợ iOS 16. Bản iOS 17–18 không bị chặn cài trên iOS mới; đây là nhóm máy khuyên dùng.
 
@@ -27,9 +27,11 @@ Không cần đăng nhập để tải file. Chọn bản phù hợp với phiê
 
 **Android:** giữ chữ ký cũ cho bản Release thử nghiệm. Nếu cài đè báo lỗi chữ ký, đừng gỡ app hoặc xóa dữ liệu để né lỗi.
 
+Xóa bản sao cloud và đăng xuất chưa phải xóa tài khoản Firebase. Chính sách hướng dẫn liên hệ yêu cầu xóa; luồng tự xóa tài khoản đầy đủ và khai báo store vẫn còn cần hoàn tất. Có chính sách không đồng nghĩa app đã được duyệt phát hành.
+
 Đây là các bản kiểm thử. Hãy cấp quyền, thử chuông khi mở app và khi khóa máy trên điện thoại của bạn trước khi dùng. Không dùng WakeStop làm lời nhắc duy nhất. Tải/build thành công không xác nhận hoạt động trên mọi thiết bị.
 
-**English:** Build 41 updates GPS handling, remaining-route display and custom route colors. These are test builds. Both iOS packages are unprovisioned and require suitable signing for the app and its extension. iOS 17/18 has limited notification sound in the background; it is not equivalent to an iOS 26 system alarm. iOS 16 is unsupported. Test on your phone before relying on alerts. Do not uninstall Android to bypass a signature mismatch.
+**English:** Build 42 synchronizes the Vietnamese/English privacy policy across Android, iOS and web. The native policy is readable offline. These are test builds. Both iOS packages are unprovisioned and require suitable app/extension signing. iOS 17/18 has limited background notification sound; iOS 16 is unsupported. Backup deletion and sign-out do not delete the Firebase account; full self-service deletion and store declarations remain unfinished. Test on your phone before relying on alerts. Do not uninstall Android to bypass a signature mismatch.
 
 Kho này chỉ cung cấp file tải công khai. Mã nguồn ứng dụng không được công khai ở đây.
 
